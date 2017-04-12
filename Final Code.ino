@@ -1,8 +1,8 @@
-#include <IRremote.h>
-#include <LiquidCrystal.h>
-#include <Stepper.h>
-#define STEPS_PER_MOTOR_REVOLUTION 32
-#define STEPS_PER_OUTPUT_REVOLUTION 32 * 16
+#include <IRremote.h>  //Include IR remote library
+#include <LiquidCrystal.h>  // include LCD library
+#include <Stepper.h>  //include Stepper library
+#define STEPS_PER_MOTOR_REVOLUTION 32   //define steps per rev
+#define STEPS_PER_OUTPUT_REVOLUTION 32 * 16 //define steps per output revolution
 LiquidCrystal lcd(12, 11, 5, 4, 3, 2);  //declares the lcd and what pins the LCD is connected to
 int IR_PIN = 10; //defines the pin that the IR Reciever is connected to
 IRrecv irrecv(IR_PIN);  //tells the IRRecv library what pin the IR Reciever is connected to
